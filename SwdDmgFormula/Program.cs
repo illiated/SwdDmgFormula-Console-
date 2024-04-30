@@ -14,6 +14,3 @@ swdDamage.SetMagic(input == '1' || input == '3');
 swdDamage.SetFlaming(input == '2' || input == '3');
 
 Console.WriteLine($"\nRolled {swdDamage.Roll} for {swdDamage.Damage} HP\n");
-
-
-
