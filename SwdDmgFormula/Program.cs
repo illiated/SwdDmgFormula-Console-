@@ -11,6 +11,6 @@ if (input != '0' && input != '1' && input != '2' && input != '3') return;
 swdDamage.Roll = random.Next(1, 7) + random.Next(1, 7) + (random.Next(1, 7));
 
 swdDamage.SetMagic(input == '1' || input == '3');
-swdDamage.SetFlaming(input == '2' || input == '3');
+swdDamage.SetFlaming(input == '2' || input == '3');// If SetMagic is not called first then this app will flop. SetMagic call to the CalculateDamage method wipes away any flaming damage calculatged previously
 
 Console.WriteLine($"\nRolled {swdDamage.Roll} for {swdDamage.Damage} HP\n");
